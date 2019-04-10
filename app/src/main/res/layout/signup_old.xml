@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/grad_back"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/black"
+
+
+        >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/return_back"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:contentDescription="@string/empty"
+            android:fontFamily="casual"
+            android:text="@string/hello_inyour_application"
+            android:textColor="@color/nice"
+            android:textColorHighlight="@color/white"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="few moment and you will be one of our family please fill the box slowly and asur your iformition"
+        android:textColorHighlight="@color/design_default_color_primary_dark"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/signup_name"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_design"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="8sp"
+        android:text="1 st name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/signup_family"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:background="@drawable/edit_text_design"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="family name" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signup_phone"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="phone number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/signup_birth"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="date of birth"
+        android:inputType="date"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <EditText
+        android:id="@+id/signup_pass"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textAlignment="center"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/edit_text_design"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/design_default_color_primary_dark"
+        />
+
+
+
+</LinearLayout>
