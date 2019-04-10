@@ -203,26 +203,27 @@
                 android:layout_marginTop="15dp">
 
                 <ImageView
-                    android:id="@+id/imgView_emailIcon"
+                    android:id="@+id/imgView_emailIcon2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
                     android:src="@drawable/img_email"
                     android:tint="@color/white"
-                />
+                    tools:ignore="DuplicateIds" />
 
                 <EditText
                     android:id="@+id/signup_local"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imgView_emailIcon"
+                    android:layout_alignBottom="@+id/imgView_emailIcon2"
                     android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/imgView_emailIcon"
+                    android:layout_toRightOf="@+id/imgView_emailIcon2"
                     android:background="@color/editTextBG"
                     android:hint="localisation"
                     android:paddingLeft="20dp"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    tools:ignore="NotSibling" />
 
             </RelativeLayout>
             <RelativeLayout
@@ -275,7 +276,7 @@
                     android:padding="8dp"
                     android:src="@drawable/img_email"
                     android:tint="@color/white"
-                    />
+                    tools:ignore="DuplicateIds" />
 
                 <EditText
                     android:id="@+id/signup_email"
@@ -298,7 +299,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/buttonstylewithgradient"
                 android:fontFamily="sans-serif-medium"
                 android:text="SIGN UP"
                 android:textColor="@color/white" />
